@@ -6,6 +6,10 @@ public class UserDetails {
 	private String userDept;
 	private Long userSalary;
 	
+	public UserDetails() {
+		
+	}
+	
 	public UserDetails(String userName, String userDept, Long userSalary) {
 		this.userName = userName;
 		this.userDept = userDept;
@@ -31,4 +35,8 @@ public class UserDetails {
 		this.userSalary = userSalary;
 	}
 	
+	@Override
+	public String toString() {
+		return "UserDetails [userName=" + userName + ", userDept=" + userDept + ", userSalary=" + userSalary + "]";
+	}
 }

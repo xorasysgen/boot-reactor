@@ -31,6 +31,7 @@ public class PublicController {
 	
 	
 	private final String TOPIC="kafka_topic";
+	private final String TOPIC_JSON="kafka_topic_json";
 	
 	@GetMapping("/greet")
 	public String greet(){
@@ -41,15 +42,15 @@ public class PublicController {
 	@GetMapping("/kafka/{message}")
 	public String kafka(@PathVariable("message") final String message) {
 		kafkaTemplate3.send(TOPIC, message);
-		return "message published succesfully";
+		return "TOPIC message published succesfully";
 	}
 	 
 	
 	
 	@PostMapping("/kafka/post")
 	public String kafkaJson(@RequestBody UserDetails user) {
-		kafkaTemplate3.send(TOPIC, user);
-		return "Message published succesfully";
+		kafkaTemplate3.send(TOPIC_JSON, user);
+		return "TOPIC_JSON Message published succesfully";
 	}
 
 }
