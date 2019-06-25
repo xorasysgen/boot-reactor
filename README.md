@@ -22,3 +22,4 @@ Now you can start sending message from producers to consumers
 #Reference :
 0. https://kafka.apache.org/
 1. https://dzone.com/articles/what-is-kafka
+3. https://techbeacon.com/app-dev-testing/what-apache-kafka-why-it-so-popular-should-you-use-it
