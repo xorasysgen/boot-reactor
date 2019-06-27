@@ -19,7 +19,7 @@ public class SecurityConfig {
 	        return http.authorizeExchange()
 	            .pathMatchers("/","/services","/admin")
 	            .hasAuthority("ROLE_ADMIN")
-	            .pathMatchers("/api/*")
+	            .pathMatchers("/api/*","/manage/*")
 	            .permitAll()
 	            //.matchers(EndpointRequest.to(FeaturesEndpoint.class))
 	            //.permitAll()

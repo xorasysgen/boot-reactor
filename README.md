@@ -1,6 +1,21 @@
 # Create efficient Reactive systems Reactor is a fourth-generation Reactive library for building non-blocking applications on
 the JVM based on the Reactive Streams Specification
 
+#Actuator
+* http://localhost:8080/manage/metrics
+* http://localhost:8080/manage/mappings
+* http://localhost:8080/manage/metrics/system.cpu.usage
+* http://10.21.178.228:8080/manage/info
+* http://localhost:8080/manage/env
+* http://localhost:8080/manage/health
+* http://localhost:8080/manage/loggers
+* http://localhost:8080/manage/loggers/root
+* http://localhost:8080/manage/httptrace
+* http://localhost:8080/manage/caches 
+* http://localhost:8080/manage/scheduledtasks
+* http://localhost:8080/monitor/configprops
+* http://localhost:8080/monitor/threaddump
+
 Multiple Modules are work together including Kafka Messaging
 
 Asynchronous messaging technology called Apache Kafka.

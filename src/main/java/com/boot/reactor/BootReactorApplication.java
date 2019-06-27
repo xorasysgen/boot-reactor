@@ -2,6 +2,7 @@ package com.boot.reactor;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -28,10 +29,14 @@ import com.boot.reactor.core.model.UserDetails;
 @EnableKafka
 public class BootReactorApplication {
 
+	@SuppressWarnings("unused")
+	private static final Logger logger=Logger.getLogger(BootReactorApplication.class.getName());
+	
 	public static void main(String[] args) {
 		SpringApplication.run(BootReactorApplication.class, args);
 		System.out.println(new WebClientApplication().callGreetService());
 	}
+	
 
 	/***********************Begin Producer Beans **************************/
 	@Bean
@@ -126,6 +131,10 @@ public class BootReactorApplication {
 		return consumerfactoryListner;
 		
 	}
+
+
+
+
 	
 	
 	/***********************end Consumer Beans **************************/
